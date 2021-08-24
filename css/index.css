@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(24, 8, 80);
+    color: #fff;
+    font-family: "adobe-clean", sans-serif;
+}
+
+a {
+    text-decoration-line: none;
+}
+
+header {
+    margin-top: 3rem;
+    display: flex;
+    width: 100vw;
+    height: 80px;
+    justify-content: center;
+}
+
+.nombre-logo {
+    margin-left: 1rem;
+    margin-right: 5rem;
+    width: 80px;
+    height: 80px;
+    font-size: 33px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo-empresa {
+    width: 80px;
+    height: 100%;
+    margin-left: 2rem;
+    background-image: linear-gradient(to right, #4f43ce, #823fbd, #af3cad);
+    border-radius: 20px;
+}
+
+.logo-empresa .medio {
+    width: 70%;
+    height: 70%;
+    position: relative;
+    top: 15%;
+    left: 15%;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.logo-empresa .centro {
+    width: 35%;
+    height: 35%;
+    border-radius: 50%;
+    position: relative;
+    top: -37%;
+    left: 33%;
+    background-image: linear-gradient(to right, #4f43ce, #823fbd, #af3cad);
+}
+
+.menu-principal {
+    width: 65%;
+    display: flex;
+}
+
+.menu-principal li {
+    list-style: none;
+    margin-left: 5%;
+    align-self: center;
+    text-transform: uppercase;
+}
+
+.menu-principal li:hover>div {
+    height: 4px;
+    content: "hola ";
+    background-image: linear-gradient(to right, #4f43ce, #823fbd, #af3cad);
+}
+
+.cuerpo {
+    width: 40%;
+    height: 350px;
+    margin-top: 10%;
+    margin-left: 15%;
+}
+
+.contenido {
+    margin-top: 5%;
+}
+
+.titulo {
+    font-size: 50px;
+}
+
+/*Ponentes*/
+.ponentes {
+    width: 80%;
+    margin: 200px 10%;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.ponente{
+    background-color:red;
+    margin: 20px 2%;
+    flex-basis: 45%;
+    display: grid;
+    grid-template-areas: "img datos";
+}
+
+.ponente img{
+    grid-area: img;
+}
+
+.ponente .datos{
+    grid-area: datos;
+}
+
+button {
+    border: none;
+    margin-top: 7%;
+    margin-right: 50px;
+    width: 120px;
+    height: 55px;
+    border-radius: 50px;
+    background-image: linear-gradient(to right, #4f43ce, #823fbd, #af3cad);
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+footer {
+    width: 80px;
+    height: 80%;
+    position: absolute;
+    top: 10%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+/*footer*/
+footer i {
+    font-size: 40px;
+    margin-top: 30px;
+    margin-right: 5px;
+}
+
+.fa-instagram:hover {
+    font-size: 60px;
+    color: #6C63FF;
+}
+
+.fa-facebook:hover {
+    font-size: 60px;
+    color: #6C63FF;
+}
+
+.fa-python:hover {
+    font-size: 60px;
+    color: #6C63FF;
+}

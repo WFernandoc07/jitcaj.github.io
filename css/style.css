@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: "adobe-clean", sans-serif;
+}
+body {
+  background-color: #333366;
+}
+
+.grid {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(20, auto);
+  grid-template-areas:
+    "header header header"
+    "baner baner baner"
+    "ponencias ponencias ponencias"
+    "ponentes ponentes ponentes"
+    "registro registro registro"
+    "integ integ integ";
+}
+.header {
+  background-color: #333366;
+  position: fixed;
+  width: 90%;
+  height: 80px;
+  display: flex;
+  grid-area: header;
+}
+.logo-empresa {
+  width: 80px;
+  height: 100%;
+  margin: 0 180px 0 80px;
+}
+.logo-empresa img {
+  width: 100%;
+  height: 100%;
+}
+/*menu*/
+.menu-principal {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-principal li {
+  list-style: none;
+  margin: 0 10px;
+}
+.menu-principal li a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.menu-principal li:hover > div {
+  height: 4px;
+  background-image: linear-gradient(to right, #4f43ce, #823fbd, #af3cad);
+}
+
+.baner {
+  grid-area: baner;
+  width: 100%;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.ponencias {
+  margin: 3rem 0;
+  grid-area: ponencias;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+.ponencia {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.ponencia img,
+.datos {
+  margin: 0 10px;
+}
+.ponencia .datos h2 {
+  margin: 10px 0;
+  text-align: center;
+}
+.ponentes {
+  margin: 3rem 0;
+  grid-area: ponentes;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+.ponente {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+}
+.ponente .img {
+  margin: 1rem 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 1px solid black;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+}
+.ponente h3 {
+  margin: 1rem;
+}
+
+/*Ponentes*/
+.p1 .img {
+  background-image: url("../img/face1.jfif");
+}
+.p2 .img {
+  background-image: url("../img/face2.jpg");
+}
+.p3 .img {
+  background-image: url("../img/Ilustracion1.jpg");
+}
+.p4 .img {
+  background-image: url("../img/Ilustracion2.jpg");
+}
+.p5 .img {
+  background-image: url("../img/Ilustracion3.jpg");
+}
+.p6 .img {
+  background-image: url("../img/Santa_Apolonia2.jpg");
+}
+
+/*Registro de espectadores*/
+.registro {
+  grid-area: registro;
+}
+.integrantes {
+  margin: 2rem 0;
+  grid-area: integ;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+.integrantes .integrante .img {
+  width: 150px;
+  height: 150px;
+  margin: 1rem;
+}
+
+.i1 .img {
+  background-image: url("../img/Ilustracion3.jpg");
+}
+
+.titulo {
+  grid-column: 1/-1;
+  justify-self: center;
+  text-transform: uppercase;
+}
+/*footer*/
+.footer {
+  width: 100%;
+  height: 300px;
+  background-color: #ff9933;
+  display: flex;
+}
+
+footer i {
+  font-size: 50px;
+  margin-top: 30px;
+  margin-right: 5px;
+}
+
+.fa-instagram:hover {
+  font-size: 60px;
+  color: #6c63ff;
+}
+
+.fa-facebook:hover {
+  font-size: 60px;
+  color: #6c63ff;
+}
+
+@media screen and (max-width: 850px) {
+  .header {
+    justify-content: space-between;
+  }
+  .logo-empresa {
+    margin: 0;
+  }
+  .ponencias {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .ponentes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .integrantes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

@@ -1,0 +1,29 @@
+.form-contact {
+    width: 30%;
+    margin-top: 3%;
+    margin-left: 35%;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-contact input,
+textarea {
+    margin-bottom: 15px;
+    padding: 15px 0px 0px 10px;
+    height: 35px;
+    background-color: #823fbd52;
+    color: white;
+    border: none;
+    border-bottom: 3px solid #af3cad;
+}
+
+textarea {
+    height: 80px;
+}
+
+button {
+    width: 100%;
+    border: none;
+    border-radius: 0;
+}
